@@ -2,6 +2,7 @@
   <v-card color="grey lighten-4" flat tile fluid>
     <v-toolbar dense>
       <v-toolbar-title>
+        <!-- テキストを入れると崩れる原因は不明だが、画像入れれば問題ない -->
         <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
       </v-toolbar-title>
 
