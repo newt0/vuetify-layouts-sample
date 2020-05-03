@@ -4,7 +4,7 @@
     <!-- <TopCards /> -->
     <Cards />
     <Cards />
-    <p>タグから探す</p>
+    <p>Instgram</p>
     <GridImages />
   </div>
 </template>
