@@ -5,7 +5,7 @@
         <h1 v-if="this.$route.path === '/'">
           <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
         </h1>
-        <p>
+        <p v-else>
           <nuxt-link to="/">
             <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
           </nuxt-link>
