@@ -2,7 +2,14 @@
   <v-card color="grey lighten-4" flat tile fluid>
     <v-toolbar dense>
       <v-toolbar-title style="min-width: 50px">
-        <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
+        <h1 v-if="this.$route.path === '/'">
+          <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
+        </h1>
+        <p>
+          <nuxt-link to="/">
+            <v-img src="https://stayhomes.netlify.app/images/logo.png"></v-img>
+          </nuxt-link>
+        </p>
       </v-toolbar-title>
 
       <v-tabs align-with-title grow style="min-width: auto">
