@@ -4,7 +4,6 @@
     <!-- <TopCards /> -->
     <Cards />
     <Cards />
-    <p>Instgram</p>
     <GridImages />
   </div>
 </template>

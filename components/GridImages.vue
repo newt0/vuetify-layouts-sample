@@ -3,6 +3,7 @@
     <v-col cols="12" sm="6" offset-sm="3">
       <v-card>
         <v-container fluid>
+          <v-row align-center justify-center>Instgram</v-row>
           <v-row>
             <v-col v-for="n in 9" :key="n" class="d-flex child-flex" cols="4">
               <v-card flat tile class="d-flex">
