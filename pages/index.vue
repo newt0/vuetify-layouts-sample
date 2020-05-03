@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: red;">
     <Carousel />
     <!-- <TopCards /> -->
     <Cards />
@@ -23,3 +23,8 @@ export default {
   }
 };
 </script>
+<style>
+.body {
+  background-color: red;
+}
+</style>
