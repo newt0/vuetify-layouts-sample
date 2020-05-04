@@ -9,20 +9,17 @@
     <p>広告</p>
     <Banner />
     <Subscribe />
-    <FeedCard />
   </div>
 </template>
 
 <script>
 import Banner from "~/components/Banner.vue";
 import Subscribe from "~/components/Subscribe.vue";
-import FeedCard from "~/components/FeedCard.vue";
 
 export default {
   components: {
     Banner,
-    Subscribe,
-    FeedCard
+    Subscribe
   }
 };
 </script>
