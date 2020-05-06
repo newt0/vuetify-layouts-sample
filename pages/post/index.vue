@@ -1,8 +1,15 @@
 <template>
   <div>
     <article>
-      <h1>記事の見出し</h1>
+       <v-breadcrumbs :items="items"></v-breadcrumbs>
+      <h1 class="headline">記事の見出し</h1>
+      <h1>普通のh1</h1>
+      <p class="body-1">記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容</p>
       <!-- <div class="post-content" v-html="$md.render(post.fields.content)"></div> -->
+      <h2 class="title">記事の章</h2>
+      <h2>普通のh2</h2>
+      <h2 class="title">記事の章</h2>
+      <h2 class="title">記事の章</h2>
     </article>
     <p>次の記事</p>
     <p>前の記事</p>
@@ -17,6 +24,25 @@ import Banner from "~/components/Banner.vue";
 import Subscribe from "~/components/Subscribe.vue";
 
 export default {
+   data: () => ({
+      items: [
+        {
+          text: 'Dashboard',
+          disabled: false,
+          href: 'breadcrumbs_dashboard',
+        },
+        {
+          text: 'Link 1',
+          disabled: false,
+          href: 'breadcrumbs_link_1',
+        },
+        {
+          text: 'Link 2',
+          disabled: true,
+          href: 'breadcrumbs_link_2',
+        },
+      ],
+    }),
   components: {
     Banner,
     Subscribe
