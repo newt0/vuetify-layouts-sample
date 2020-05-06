@@ -4,6 +4,7 @@
        <v-breadcrumbs :items="items"></v-breadcrumbs>
       <h1 class="headline">記事の見出し</h1>
       <h1>普通のh1</h1>
+      <h1 class="test">CSSで上書きできるか試す</h1>
       <p class="body-1">記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容記事の内容</p>
       <!-- <div class="post-content" v-html="$md.render(post.fields.content)"></div> -->
       <h2 class="title">記事の章</h2>
@@ -49,3 +50,24 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+* {
+  background-color: #f6f6f6;
+  color: #433422;
+  /* これは効くけど左右上下にマージンある */
+}
+html {
+  background-color: gold;
+  /* これは効かない  */
+}
+article {
+  background-color: bisque;
+  /* これは効く */
+}
+
+.test {
+  color: red;
+  /* 普通に効く */
+}
+</style>

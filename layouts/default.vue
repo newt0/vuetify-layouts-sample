@@ -23,3 +23,18 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+// * {background-color: #f6f6f6;}
+html {
+  background-color: red;
+}
+a {
+  text-decoration: none;
+  color: #2f80ed;
+}
+ul,
+ol {
+  list-style: none;
+}
+</style>
